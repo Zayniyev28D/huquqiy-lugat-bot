@@ -1,7 +1,17 @@
 import os
+import sys
 import random
 import logging
 import asyncio
+
+# Windows konsolida UTF-8 ni to'g'ri ko'rsatish
+if sys.platform == "win32":
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+        sys.stderr.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
+
 from dotenv import load_dotenv
 
 from aiogram import Bot, Dispatcher, F
@@ -413,6 +423,9 @@ async def main():
         # Eski kutilayotgan xabarlarni tozalash va pollingni boshlash
         await bot.delete_webhook(drop_pending_updates=True)
         bot_info = await bot.get_me()
+        global BOT_USERNAME
+        if bot_info.username:
+            BOT_USERNAME = bot_info.username
         logger.info(f"Bot muvaffaqiyatli ishga tushdi: @{bot_info.username}")
         print("\n" + "="*60)
         print(f"🚀 Bot ishga tushdi: @{bot_info.username}")
