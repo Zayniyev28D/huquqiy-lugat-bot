@@ -4,7 +4,8 @@ WORKDIR /app
 
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
-    PORT=8080
+    PORT=8080 \
+    BOT_TOKEN=8972408712:AAGQsFm94Jz7eBEe6gSTj7WqUT71rrqi09c
 
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt

@@ -54,7 +54,7 @@ logger = logging.getLogger("SharofavasWordBot")
 BOT_NAME = "SHAROFOVA'S WORD"
 BOT_USERNAME = "lugaviy_word_uz_bot"
 
-BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
+BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip() or "8972408712:AAGQsFm94Jz7eBEe6gSTj7WqUT71rrqi09c"
 PORT = int(os.getenv("PORT", 8080))
 SELF_URL = os.getenv("SELF_URL") or os.getenv("RENDER_EXTERNAL_URL") or ""
 
