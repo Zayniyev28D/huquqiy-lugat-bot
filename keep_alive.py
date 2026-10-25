@@ -19,7 +19,7 @@ async def handle_home(request):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Huquqiy Lug'at Boti | 24/7 Online</title>
+    <title>SHAROFOVA'S WORD | 24/7 Online</title>
     <style>
         body {{
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -101,7 +101,8 @@ async def handle_home(request):
 <body>
     <div class="card">
         <div class="badge">● TIZIM FAOL (ONLINE)</div>
-        <h1>Huquqiy Lug'at Telegram Boti</h1>
+        <h1>SHAROFOVA'S WORD</h1>
+        <p style="color: #38bdf8; font-weight: 500;">@lugaviy_word_uz_bot</p>
         <p>O'zbekiston Respublikasi Konstitutsiyasi va qonunchiligi asosidagi 50 ta asosiy huquqiy atamalar izohli lug'ati.</p>
         
         <div class="stat-grid">

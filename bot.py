@@ -39,7 +39,10 @@ logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(name)s - %(message)s"
 )
-logger = logging.getLogger("HuquqiyLugatBot")
+logger = logging.getLogger("SharofavasWordBot")
+
+BOT_NAME = "SHAROFOVA'S WORD"
+BOT_USERNAME = "lugaviy_word_uz_bot"
 
 BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
 PORT = int(os.getenv("PORT", 8080))
@@ -72,8 +75,8 @@ def format_term_card(item: dict) -> str:
 def format_start_message(user_name: str) -> str:
     return (
         f"Assalomu alaykum, <b>{user_name}</b>!\n\n"
-        f"🏛 <b>Oʻzbekiston Respublikasi Huquqiy Atamalari Izohli Lugʻati</b> botiga xush kelibsiz!\n\n"
-        f"Ushbu bot Oʻzbekiston Respublikasi Konstitutsiyasi, kodekslari, qonunlari hamda "
+        f"🏛 <b>«{BOT_NAME}»</b> (@{BOT_USERNAME}) — Huquqiy Atamalar Izohli Lugʻati botiga xush kelibsiz!\n\n"
+        f"Ushbu bot Oʻzbekiston Respublikasi Konstitutsiyasi, kodekslari, amaldagi qonunlari hamda "
         f"Adliya vazirligining rasmiy <b>«Yuridik ensiklopediya»</b> nashri asosidagi "
         f"<b>50 ta asosiy huquqiy atama</b> va ularning rasmiy izohlarini oʻz ichiga oladi.\n\n"
         f"⚡ <b>Bot imkoniyatlari:</b>\n"
@@ -87,9 +90,9 @@ def format_start_message(user_name: str) -> str:
 
 def format_about_message() -> str:
     return (
-        f"ℹ️ <b>Bot haqida maʼlumot:</b>\n\n"
+        f"ℹ️ <b>«{BOT_NAME}» (@{BOT_USERNAME}) haqida:</b>\n\n"
         f"Mazkur bot yurisprudensiya yoʻnalishidagi 50 ta fundamental huquqiy atamalarning "
-        f"aniq va rasmiy tushuntirishlarini oʻrganish uchun moʻljallangan.\n\n"
+        f"aniq va rasmiy tushuntirishlarini oʻrganish uchun maxsus yaratilgan.\n\n"
         f"📚 <b>Atamalar quyidagi 4 ta asosiy sohaga ajratilgan:</b>\n"
         f"1. 🏛 Davlat va huquq nazariyasi hamda Konstitutsiyaviy huquq (15 ta atama)\n"
         f"2. 📑 Fuqarolik, oila va mehnat huquqi (13 ta atama)\n"
@@ -113,7 +116,7 @@ def format_search_help() -> str:
         f"👉 <code>Aliment</code>\n\n"
         f"2. <b>Qisman moslik:</b> Soʻzning bir qismini yozsangiz ham bot uni topadi (masalan: <i>prezump</i>, <i>kolliz</i>, <i>retsidiv</i>).\n\n"
         f"3. <b>Inline qidiruv:</b> Istalgan guruh yoki doʻstingiz bilan yozishayotganda "
-        f"<code>@{('bot')} so'z</code> deb yozsangiz, toʻgʻridan-toʻgʻri chatda yuridik izohni ulasha olasiz!"
+        f"<code>@{BOT_USERNAME} so'z</code> deb yozsangiz, toʻgʻridan-toʻgʻri chatda yuridik izohni ulasha olasiz!"
     )
 
 # =============================================================================

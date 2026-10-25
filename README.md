@@ -1,6 +1,9 @@
-# 🏛 Oʻzbekiston Respublikasi Huquqiy Atamalari Izohli Lugʻati (Telegram Bot)
+# 🏛 SHAROFOVA'S WORD (@lugaviy_word_uz_bot) — Huquqiy Atamalar Izohli Lugʻati
 
 Ushbu bot Oʻzbekiston Respublikasi Konstitutsiyasi, kodekslari, amaldagi qonunlari hamda Adliya vazirligining rasmiy **«Yuridik ensiklopediya»** nashri asosida shakllantirilgan **50 ta asosiy huquqiy atama** va ularning rasmiy izohlarini qulay shaklda taqdim etadi.
+
+- **Bot nomi:** `SHAROFOVA'S WORD`
+- **Username:** `@lugaviy_word_uz_bot`
 
 ---
 
